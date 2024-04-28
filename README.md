@@ -11,8 +11,9 @@ The preprint is available on: https://arxiv.org/abs/2212.05466
 Learned Compression (LC) is the emerging technology for compressing image and video content, using deep neural networks. Despite being new, LC methods have already gained a compression efficiency comparable to state-of-the-art image compression, such as HEVC or even VVC. However, the existing solutions often require a huge computational complexity, which discourages their adoption in international standards or products. This paper provides a comprehensive complexity assessment of several notable methods, that shed light on the matter, and guide the future development of this field by presenting key findings. To do so, six existing methods have been evaluated for both encoding and decoding, on CPU and GPU platforms. Various aspects of complexity such as the overall complexity, share of each coding module, number of operations, number of parameters, most demanding GPU kernels, and memory requirements have been measured and compared on Kodak dataset. The reported results (1) quantify the complexity of LC methods, (2) fairly compare different methods, and (3) a major contribution of the work is identifying and quantifying the key factors affecting the complexity.
 
 ## Methodology
-   The methodology to collect the data is given in Fig.2  of the paper, copied here.
-   ![image](https://github.com/farhad02/LC_Assessment/assets/25692764/e1ee86da-e33c-40ef-b682-a87b31d1e8ff)
+The methodology to collect the data is given in Fig.2  of the paper, copied here.
+   ![image](https://github.com/farhad02/LC_Assessment/assets/25692764/c922d3af-1ea4-40b7-adfc-d3e2233b3425)
+
 For each measurement a warm-up step is performed where the codec model is loaded into the device (CPU or GPU). Loading time Is excluded from the measurements. A dummy encoding/decoding runs first to warm-up the GPU to high working frequencies. Next synchronization is done between the host and device, for more accurate GPU measurement. Finally, the encoding/decoding are performed for each image on a codec fully annotated for sub-module measurements. For time measurements, the following tolls are used: Nsight System, Time library, and and [PTFlops library](https://github.com/sovrasov/flops-counter.pytorch).
 
    fig, steps, Codec names, Nsight, PTFlop, 
