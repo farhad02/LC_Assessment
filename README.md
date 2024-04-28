@@ -56,4 +56,4 @@ If this work is useful to your research, please cite the paper as follows:
   }
 
 ## Project information
-This data is associated with the project [FALCON](https://www.tuni.fi/en/research/falcon), under Work Package 1 (WP1). The This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 101022466.
+This data is associated with the project [FALCON](https://www.tuni.fi/en/research/falcon), under Work Package 1 (WP1). This project has received funding from the European Union’s Horizon 2020 research and innovation programme under the Marie Skłodowska-Curie grant agreement No 101022466.
