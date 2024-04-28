@@ -10,10 +10,14 @@ The preprint is available on: https://arxiv.org/abs/2212.05466
 
 Learned Compression (LC) is the emerging technology for compressing image and video content, using deep neural networks. Despite being new, LC methods have already gained a compression efficiency comparable to state-of-the-art image compression, such as HEVC or even VVC. However, the existing solutions often require a huge computational complexity, which discourages their adoption in international standards or products. This paper provides a comprehensive complexity assessment of several notable methods, that shed light on the matter, and guide the future development of this field by presenting key findings. To do so, six existing methods have been evaluated for both encoding and decoding, on CPU and GPU platforms. Various aspects of complexity such as the overall complexity, share of each coding module, number of operations, number of parameters, most demanding GPU kernels, and memory requirements have been measured and compared on Kodak dataset. The reported results (1) quantify the complexity of LC methods, (2) fairly compare different methods, and (3) a major contribution of the work is identifying and quantifying the key factors affecting the complexity.
 
+## Methodology
+fig, steps, Codec names, Nsight, PTFlop, 
 
 ## Data
 
-The data provided in the folder FALCON_ICASSP2024_WP1_V1.0 includes the detailed profiling results of this project, organized in .xlsx files. The subfolder Timing includes the timings of encoding and decoding operations on CPU and GPU (marked with CUDA). The information is given for images in [KODAK dataset](https://r0k.us/graphics/kodak/).
+The data provided in the folder "FALCON_ICASSP2024_WP1_V1.0" includes the detailed profiling results of this project, organized in .xlsx files. The subfolder "Timing" includes the timings of encoding and decoding operations on CPU and GPU (marked with CUDA). The information is given for images in [KODAK dataset](https://r0k.us/graphics/kodak/). The tabulated data contains sheets that are either given per image, which includes the image name, named kodim01 to kodim24, or as average results. The subfolder "NSightSystems_Kernels_Memory" includes GPU profiling reports from NSight Systems. The tab AVG includes the raw average results for Kodak dataset, and the tab Summarized gives a summary of kernel shares. For interpretation of raw information in Nsight Systems refer to the software's [documentation](https://docs.nvidia.com/nsight-systems/UserGuide/index.html).
+
+Codec names:
 
 
 ## Citation
