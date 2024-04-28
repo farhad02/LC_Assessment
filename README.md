@@ -17,8 +17,16 @@ The methodology to collect the data is given in Fig.2  of the paper, copied here
 
 For each measurement a warm-up step is performed where the codec model is loaded into the device (CPU or GPU). Loading time Is excluded from the measurements. A dummy encoding/decoding runs first to warm-up the GPU to high working frequencies. Next synchronization is done between the host and device, for more accurate GPU measurement. Finally, the encoding/decoding are performed for each image on a codec fully annotated for sub-module measurements. For time measurements, the following tolls are used: Nsight System, Time library, and and [PTFlops library](https://github.com/sovrasov/flops-counter.pytorch).
 
-   fig, steps, Codec names, Nsight, PTFlop, 
+The evaluations are done using the [CompressAI Library](https://interdigitalinc.github.io/CompressAI/), and on the following codecs, with the annotations given in the paranthesis:
 
+1- Factorized Prior (FP), [ICLR2018](https://arxiv.org/abs/1802.01436)
+2- Scale Hyperprior (HP), [ICLR2018](https://arxiv.org/abs/1802.01436)
+3- Mean and Scale HP (MS-HP), [Neurips2018](https://arxiv.org/abs/1809.02736)
+4- Autoregresive Context, (ARC), [Neurips2018](https://arxiv.org/abs/1809.02736)
+5- Discretized Gaussian Mixture likelihood (DGM), [CVPR2020](https://arxiv.org/abs/2001.01568)
+6- DGM with Attention (DGM-ATT), [CVPR2020](https://arxiv.org/abs/2001.01568)
+
+ 
 ## Data
 
 The data provided in the folder "FALCON_ICASSP2024_WP1_V1.0" includes the detailed profiling results of this project, organized in .xlsx files. The subfolder "Timing" includes the timings of encoding and decoding operations on CPU and GPU (marked with CUDA). The information is given for images in [KODAK dataset](https://r0k.us/graphics/kodak/). The tabulated data contains sheets that are either given per image, which includes the image name, named kodim01 to kodim24, or as average results. The subfolder "NSightSystems_Kernels_Memory" includes GPU profiling reports from NSight Systems. The tab AVG includes the raw average results for Kodak dataset, and the tab Summarized gives a summary of kernel shares. For interpretation of raw information in Nsight Systems refer to the software's [documentation](https://docs.nvidia.com/nsight-systems/UserGuide/index.html). Moreover, the tab Memory summarizes the memory operations during encoding and decoding.
