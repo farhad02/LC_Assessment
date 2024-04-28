@@ -12,7 +12,8 @@ Learned Compression (LC) is the emerging technology for compressing image and vi
 
 ## Methodology
 The methodology to collect the data is given in Fig.2  of the paper, copied here.
-   ![image](https://github.com/farhad02/LC_Assessment/assets/25692764/c922d3af-1ea4-40b7-adfc-d3e2233b3425)
+
+![image](https://github.com/farhad02/LC_Assessment/assets/25692764/e9dd5c0e-36c0-4745-b340-27426e51a2ef)
 
 For each measurement a warm-up step is performed where the codec model is loaded into the device (CPU or GPU). Loading time Is excluded from the measurements. A dummy encoding/decoding runs first to warm-up the GPU to high working frequencies. Next synchronization is done between the host and device, for more accurate GPU measurement. Finally, the encoding/decoding are performed for each image on a codec fully annotated for sub-module measurements. For time measurements, the following tolls are used: Nsight System, Time library, and and [PTFlops library](https://github.com/sovrasov/flops-counter.pytorch).
 
