@@ -20,6 +20,5 @@ If this work is useful to your research, please cite the paper as follows:
         title={Comprehensive Complexity Assessment of Emerging Learned Image Compression on CPU and GPU}, 
         year={2023},
         pages={1-5},
-        keywords={Image coding;Memory management;Graphics processing units;Transforms;Complexity theory;Decoding;Kernel;Learned compression;image coding;complexity assessment;encoding complexity},
         doi={10.1109/ICASSP49357.2023.10096046}
   }
