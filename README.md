@@ -36,6 +36,9 @@ The evaluations are done using the [CompressAI Library](https://interdigitalinc.
 
 The data provided in the folder "FALCON_ICASSP2023_WP1_V1.0" includes the detailed profiling results of this project, organized in .xlsx files. The subfolder "Timing" includes the timings of encoding and decoding operations on CPU and GPU (marked with CUDA). The information is given for images in [KODAK dataset](https://r0k.us/graphics/kodak/). The tabulated data contains sheets that are either given per image, which includes the image name, named kodim01 to kodim24, or as average results. The subfolder "NSightSystems_Kernels_Memory" includes GPU profiling reports from NSight Systems. The tab AVG includes the raw average results for Kodak dataset, and the tab Summarized gives a summary of kernel shares. For interpretation of raw information in Nsight Systems refer to the software's [documentation](https://docs.nvidia.com/nsight-systems/UserGuide/index.html). Moreover, the tab Memory summarizes the memory operations during encoding and decoding.
 
+## Data mirror
+The data can also be accessed through [Zenodo](https://zenodo.org/records/11080556).
+
 ## License and terms of use
 This data is licensed under CC-BY-4.0,. The data can be used and distributed freely, with proper reference to the paper.
 
