@@ -20,10 +20,15 @@ For each measurement a warm-up step is performed where the codec model is loaded
 The evaluations are done using the [CompressAI Library](https://interdigitalinc.github.io/CompressAI/), and on the following codecs, with the annotations given in the paranthesis:
 
 1- Factorized Prior (FP), [ICLR2018](https://arxiv.org/abs/1802.01436)
+
 2- Scale Hyperprior (HP), [ICLR2018](https://arxiv.org/abs/1802.01436)
+
 3- Mean and Scale HP (MS-HP), [Neurips2018](https://arxiv.org/abs/1809.02736)
+
 4- Autoregresive Context, (ARC), [Neurips2018](https://arxiv.org/abs/1809.02736)
+
 5- Discretized Gaussian Mixture likelihood (DGM), [CVPR2020](https://arxiv.org/abs/2001.01568)
+
 6- DGM with Attention (DGM-ATT), [CVPR2020](https://arxiv.org/abs/2001.01568)
 
  
