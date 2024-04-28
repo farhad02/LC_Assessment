@@ -15,12 +15,11 @@ Learned Compression (LC) is the emerging technology for compressing image and vi
 If this work is useful to your research, please cite the paper as follows:
 
     @INPROCEEDINGS{10096046,
-  author={Pakdaman, Farhad and Gabbouj, Moncef},
-  booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
-  title={Comprehensive Complexity Assessment of Emerging Learned Image Compression on CPU and GPU}, 
-  year={2023},
-  volume={},
-  number={},
-  pages={1-5},
-  keywords={Image coding;Memory management;Graphics processing units;Transforms;Complexity theory;Decoding;Kernel;Learned compression;image coding;complexity assessment;encoding complexity},
-  doi={10.1109/ICASSP49357.2023.10096046}}
+        author={Pakdaman, Farhad and Gabbouj, Moncef},
+        booktitle={ICASSP 2023 - 2023 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, 
+        title={Comprehensive Complexity Assessment of Emerging Learned Image Compression on CPU and GPU}, 
+        year={2023},
+        pages={1-5},
+        keywords={Image coding;Memory management;Graphics processing units;Transforms;Complexity theory;Decoding;Kernel;Learned compression;image coding;complexity assessment;encoding complexity},
+        doi={10.1109/ICASSP49357.2023.10096046}
+  }
